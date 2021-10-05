@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import AddToList from "./components/AddToList";
 import List from "./components/List";
 
 interface IState {
@@ -24,6 +25,7 @@ function App() {
     <div className="App">
       <h1>People Invited to my party!</h1>
       <List people={people} />
+      <AddToList />
     </div>
   );
 }

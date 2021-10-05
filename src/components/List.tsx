@@ -10,9 +10,9 @@ interface IProps {
 }
 const List: React.FC<IProps> = ({ people }) => {
   const renderList = (): JSX.Element[] => {
-    return people.map((person) => {
+    return people.map((person, index) => {
       return (
-        <li className="List">
+        <li key={index} className="List">
           <div className="List-header">
             <img className="List-img" src={person.url} alt="player" />
             <h2>{person.name}</h2>
